@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ctr{
+            width: 1200px;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .card{
+            border: 2px yellow;
+            height: 300px;
+            width: 25%;
+            margin: 10px;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .love{
+            background-color: rgb(232, 95, 95);
+            float: left;
+        }
+        .hate{
+            background-color: grey;
+            float: left;
+        }
+        .hate:hover{
+            border: dotted black;
+            position: relative;
+            left: 20%;
+            margin-top: 20%;
+            background-image: url("https://i.pinimg.com/564x/2c/a4/88/2ca488cb58dda74220ddcc8d29b3c808.jpg");
+            background-size: contain;
+        }
+        .love:hover{
+            border: solid red;
+            scale: 1.5;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/030/534/463/non_2x/close-up-of-mini-couple-dolls-in-romantic-kiss-for-valentine-s-day-concept-free-photo.jpeg);
+            background-size: contain;
+        }
+        .love:hover::after{
+            content: " too!";
+        }
+        .hate:hover::after{
+            content: "! One day, when you realize what my love truly meant, I’ll already be gone.";
+        }
+    </style>
+</head>
+<body>
+    <div class="ctr">
+        <div class="card love">I love you</div>
+        <div class="card hate">Hate you</div>
+    </div>
+</body>
+</html>
